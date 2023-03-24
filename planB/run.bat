@@ -1,0 +1,19 @@
+python3 run.py ^
+--model_type bert ^
+--model_name_or_path ./model_file  ^
+--do_train ^
+--do_eval ^
+--do_test ^
+--data_dir ./data/task1_data_StratifiedKFold_2020/data_origin_0 ^
+--output_dir ./output/out_0 ^
+--max_seq_length 512 ^
+--split_num 1 ^
+--eval_steps 200 ^
+--per_gpu_train_batch_size 4 ^
+--gradient_accumulation_steps 4 ^
+--warmup_steps 0 ^
+--per_gpu_eval_batch_size 32 ^
+--learning_rate 1e-5 ^
+--adam_epsilon 1e-6 ^
+--weight_decay 0 ^
+--train_steps 20000 ^

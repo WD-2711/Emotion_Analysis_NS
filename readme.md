@@ -40,3 +40,22 @@ python3 data_wash.py
 python3 main.py
 ```
 
+------
+
+## PlanB
+
+&emsp;PlanB provides a new solution. By replacing the English symbols of the original data set, and using the `K-fold stratified sampling method` to preprocess the data set. After that, the model `BertForSequenceClassification` is used for direct training. By adjusting reasonable hyperparameters, the final classification result can reach `0.83`.
+
+&emsp;It should be noted that you need to `download the pre-trained model` to the model_file folder in advance at Huggingface. The model name is `hfl/chinese-roberta-wwm-ext-large`, and the model URL is at `https://huggingface.co/hfl/chinese-roberta-wwm-ext-large`.
+
+&emsp;The steps to use are as follows:
+
+```
+python3 pipline.py
+./run.bat
+```
+
+## Cite
+
+- https://github.com/AlvinAi96/COI
+- https://cloud.tencent.com/developer/article/2136055
